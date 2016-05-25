@@ -499,7 +499,7 @@ int fd_breakhere(void);
 	TRACE_DEBUG_ALL( "Check FCT: " #__call__ );					\
 	__ret__ = (__call__);								\
 	if (__ret__ != 0) {								\
-		TRACE_DEBUG_ERROR("ERROR: in '" #__call__ "':\t%s", strerror(__ret__));	\
+		TRACE_DEBUG_ERROR("ERROR: in %s:%d'" #__call__ "':\t%s", __FILE__, __LINE__, strerror(__ret__));	\
 		__fallback__;								\
 	}										\
 }
