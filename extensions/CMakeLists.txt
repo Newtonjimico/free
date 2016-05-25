@@ -36,6 +36,7 @@ INCLUDE_DIRECTORIES(${LFDCORE_INCLUDES})
 ####
 # Diameter applications dictionaries
 
+FD_EXTENSION_SUBDIR(dict_s6a "3GPP S6A TS.29.279-990"       ON)
 FD_EXTENSION_SUBDIR(dict_nasreq "NASREQ (RFC4005) Dictionary definitions"       ON)
 FD_EXTENSION_SUBDIR(dict_eap    "Diameter EAP (RFC4072) Dictionary definitions" ON)
 
